@@ -1,0 +1,23 @@
+{
+  "name": "new-e-commerce",
+  "version": "1.0.0",
+  "description": "e-commerce-platform using graphqa",
+  "main": "index.js",
+  "repository": "https://github.com/Aravind-art/new-e-commerce.git",
+  "author": "Aravind Muthuraman <aravind_balalok@yahoo.co.in>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "echo 'Running Text'",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
