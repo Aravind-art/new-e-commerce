@@ -6,18 +6,26 @@
   "repository": "https://github.com/Aravind-art/new-e-commerce.git",
   "author": "Aravind Muthuraman <aravind_balalok@yahoo.co.in>",
   "license": "MIT",
-  "type": "module",
   "scripts": {
     "test": "echo 'Running Text'",
-    "dev": "nodemon server.js",
+    "dev": "nodemon ./index.js --exec babel-node",
     "start": "node server.js"
   },
   "dependencies": {
+    "@apollo/server": "^4.1.1",
+    "@graphql-tools/schema": "^9.0.9",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-graphql": "^0.12.0",
-    "graphql": "^16.6.0"
+    "graphql": "^16.6.0",
+    "graphql-import-node": "^0.0.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/node": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
     "nodemon": "^2.0.20"
   }
 }
