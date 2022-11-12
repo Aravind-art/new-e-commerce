@@ -1,6 +1,7 @@
 import dotenv from "dotenv";
-
-dotenv.config();
+import dotenvExpand from 'dotenv-expand'
+const myEnv = dotenv.config();
+dotenvExpand.expand(myEnv);
 
 const port = process.env.PORT;
 
